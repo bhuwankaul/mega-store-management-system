@@ -1,0 +1,47 @@
+"bill id";"product_name";"bill_type";"amount";"quantity";"supplier";"customer";"employee"
+"1";"Maggi";"PURCHASE";"20";"10";"Big basket";NULL;NULL
+"38";"ACER predator";"PURCHASE";"750000";"10";"best price";NULL;NULL
+"39";"potato-1kg";"PURCHASE";"1000";"50";"More super-mart";NULL;NULL
+"40";"iphone";"PURCHASE";"1000000";"20";"electroflux";NULL;NULL
+"41";"onion-1kg";"PURCHASE";"1600";"40";"More super-mart";NULL;NULL
+"43";"apple";"PURCHASE";"16000";"80";"More super-mart";NULL;NULL
+"44";"dairy milk";"PURCHASE";"20000";"200";"More super-mart";NULL;NULL
+"45";"Maggi";"PURCHASE";"50000";"500";"best price";NULL;NULL
+"46";"sony bravia led";"SALES";"4200000";"30";NULL;"baba rehnchordas";"bhuwan"
+"47";"Maggi";"SALES";"520";"52";NULL;"bubli";"ananta"
+"48";"iphone";"SALES";"3000000";"60";NULL;"bunty";"ananta"
+"49";"ACER predator";"SALES";"750000";"10";NULL;"bunty";"abhishek"
+"50";"thumbs up";"SALES";"25200";"720";NULL;"bunty";"bhuwan"
+"51";"carrot";"SALES";"1200";"10";NULL;"baba rehnchordas";"bhuwan"
+"52";"apple";"SALES";"12000";"60";NULL;"bubli";"abhishek"
+"53";"carrot-1kg";"PURCHASE";"6000";"50";"green-leaves";NULL;NULL
+"54";"Maggi";"SALES";"100";"10";NULL;"baba rehnchordas";"bhuwan"
+"55";"Maggi";"PURCHASE";"500";"50";"best price";NULL;NULL
+"56";"Maggi";"PURCHASE";"500";"-50";"More super-mart";NULL;NULL
+"57";"Maggi";"SALES";"100";"10";NULL;"bubli";"bhuwan"
+"58";"Maggi";"PURCHASE";"100";"10";"best price";NULL;NULL
+"59";"Maggi";"SALES";"100";"10";NULL;"baba rehnchordas";"abhishek"
+"60";"Maggi";"SALES";"100";"10";NULL;"baba rehnchordas";"bhuwan"
+"61";"Maggi";"PURCHASE";"100";"10";"More super-mart";NULL;NULL
+"62";"Maggi";"SALES";"100";"10";NULL;"baba rehnchordas";"bhuwan"
+"63";"Maggi";"SALES";"100";"10";NULL;"bunty";"abhishek"
+"64";"Maggi";"PURCHASE";"500";"50";"best price";NULL;NULL
+"customer _id";"customer_name";"purchase_gross"
+"1";"baba rehnchordas";"4251910"
+"2";"bubli";"12990"
+"3";"bunty";"4029700"
+"employee_id";"employee_name";"sales_gross"
+"1";"abhishek";"762520"
+"2";"bhuwan";"4436900"
+"3";"ananta";"3000770"
+"product id";"product_name";"product type";"product cost";"availablity"
+"1";"maggi";"grocery";"10";"in stock"
+"2";"thumbs up";"grocery";"35";"in stock"
+"3";"dairy milk";"grocery";"100";"in stock"
+"4";"carrot-1kg";"vegetable";"120";"in stock"
+"5";"potato-1kg";"vegetable";"20";"in stock"
+"6";"onion-1kg";"vegetable";"40";"in stock"
+"7";"apple";"fruit";"200";"in stock"
+"8";"iphone";"electronics";"50000";"in stock"
+"9";"sony Bravia led";"electronics";"140000";"in stock"
+"10";"acer predator";"electronics";"75000";"in stock"
