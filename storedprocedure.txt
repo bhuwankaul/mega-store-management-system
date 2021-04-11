@@ -1,0 +1,9 @@
+Create procedure login.insertuser(IN username TEXT, IN password TEXT) insert into login(username, password) values(username, password)
+
+DELIMITER //
+Create trigger me.before_insert_bill
+Before Insert on me.bill for each row
+BEGIN
+IF New.amount < 0 THEN SET New.amount = -1* New.amount;
+END IF;
+END //

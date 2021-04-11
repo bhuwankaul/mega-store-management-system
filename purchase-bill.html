@@ -1,0 +1,148 @@
+<?php 
+$user = 'root'; 
+$password = '';
+$database = 'mega-store';
+$servername='localhost'; 
+$mysqli = new mysqli($servername, $user,  
+                $password, $database); 
+
+if ($mysqli->connect_error) { 
+    die('Connect Error (' .  
+    $mysqli->connect_errno . ') '.  
+    $mysqli->connect_error); 
+} 
+$sql = "SELECT * FROM product"; 
+$result = $mysqli->query($sql); 
+$mysqli->close();  
+?>
+
+<html>
+ 
+ <head>
+    <title>purchase bill</title>
+	
+	<style>
+	
+	 h1{
+	    padding-left:700px;
+	    background-color:yellow;
+	   }
+	 #first-section{
+	     color:red;
+		 width:300px;
+		 height:00px;
+		 opacity:0.9;
+		position:relative;
+		top:-40;
+		padding:1px;
+		margin:10px;
+		font-family:Cursive;
+	   }
+	.box{
+	     position:relative;
+		 top:100px;
+	     left:120px;
+	}
+	.box select
+	{
+	  background: #0563af;
+	  padding: 10px;
+	  width: 200px;
+	}
+	#fonts
+	{
+	 font-color:black;
+	 font-family:Fantasy;
+	 font-size:20px;
+	 padding:10px;
+	 position:relative;
+	 top:160px;
+	 
+	
+	}
+	table { 
+            margin: 0 auto; 
+            font-size: large; 
+            border: 1px solid black; 
+        } 
+  
+        h1 { 
+            text-align: center; 
+            color: #006600; 
+            font-size: xx-large; 
+            font-family: 'Gill Sans', 'Gill Sans MT',  
+            ' Calibri', 'Trebuchet MS', 'sans-serif'; 
+        } 
+  
+        td { 
+            background-color: #E4F5D4; 
+            border: 1px solid black; 
+        } 
+  
+        th, 
+        td { 
+            font-weight: bold; 
+            border: 1px solid black; 
+            padding: 10px; 
+            text-align: center; 
+        } 
+  
+        td { 
+            font-weight: lighter; 
+        } 
+	</style>
+	
+	
+	<h1>INVOICE</h1>
+	
+ </head>
+ 
+ 
+ 
+
+ <body>  
+ 
+    <div id="first-section">
+    <h3> BLAZETICS MEGA-STORE</h3>
+	<h3> BANASHANKARI BANGLORE </h3>
+	<h3> ph-9060112452, 0191-234437.</h3>
+	</div>
+	<div id="fonts">
+	<p> SUPPLIER : </p>
+	</div>
+    <div class ="box">
+	     <select>
+		    <option>More super-mart</option> 
+			<option>best price</option> 
+			<option>green-leaves</option> 
+			<option>electroflux</option> 
+		 </select>
+      
+    </div>
+    <section>
+        <table> 
+            <tr> 
+                <th>product id</th> 
+                <th>product name</th> 
+                <th>product type</th> 
+                <th>product cost</th> 
+            </tr> 
+            <?php
+                while($rows=$result->fetch_assoc()) 
+                { 
+             ?> 
+            <tr>
+                <td><?php echo $rows['product id'];?></td> 
+                <td><?php echo $rows['product name'];?></td> 
+                <td><?php echo $rows['product type'];?></td> 
+                <td><?php echo $rows['product cost'];?></td> 
+            </tr> 
+            <?php 
+                } 
+             ?> 
+        </table> 
+    </section> 
+
+ </body>
+
+</html>
